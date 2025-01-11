@@ -1,0 +1,350 @@
+
+Crow-Robot.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000001f4  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         000006e4  00000000  00000000  00000248  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000085  00000000  00000000  0000092c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 00000080  00000000  00000000  000009b8  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00000599  00000000  00000000  00000a38  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 0000012b  00000000  00000000  00000fd1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   000003af  00000000  00000000  000010fc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  000000d4  00000000  00000000  000014ac  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000156  00000000  00000000  00001580  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  10:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  14:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  18:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  1c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  20:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  24:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  28:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  2c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  30:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  34:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  38:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  3c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  40:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  44:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  48:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  4c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  50:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  54:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  58:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  5c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  60:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  64:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  68:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  6c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  70:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  74:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  78:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  7c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  80:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  84:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  88:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  8c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  90:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  94:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  98:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  9c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  ac:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  bc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  cc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  dc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  e0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	e4 ef       	ldi	r30, 0xF4	; 244
+  fc:	f1 e0       	ldi	r31, 0x01	; 1
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a0 30       	cpi	r26, 0x00	; 0
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+
+0000010e <__do_clear_bss>:
+ 10e:	12 e0       	ldi	r17, 0x02	; 2
+ 110:	a0 e0       	ldi	r26, 0x00	; 0
+ 112:	b2 e0       	ldi	r27, 0x02	; 2
+ 114:	01 c0       	rjmp	.+2      	; 0x118 <.do_clear_bss_start>
+
+00000116 <.do_clear_bss_loop>:
+ 116:	1d 92       	st	X+, r1
+
+00000118 <.do_clear_bss_start>:
+ 118:	a0 30       	cpi	r26, 0x00	; 0
+ 11a:	b1 07       	cpc	r27, r17
+ 11c:	e1 f7       	brne	.-8      	; 0x116 <.do_clear_bss_loop>
+ 11e:	0e 94 ba 00 	call	0x174	; 0x174 <main>
+ 122:	0c 94 f8 00 	jmp	0x1f0	; 0x1f0 <_exit>
+
+00000126 <__bad_interrupt>:
+ 126:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000012a <magnet_pin_config>:
+? * Logic: This function configures the pins on PORT-H for electromagnet
+? * Example Call: magnet_pin_config()
+? */
+void magnet_pin_config()
+{
+	DDRH = 0b00000001;
+ 12a:	81 e0       	ldi	r24, 0x01	; 1
+ 12c:	80 93 01 01 	sts	0x0101, r24
+	PORTH =0b00000000;
+ 130:	10 92 02 01 	sts	0x0102, r1
+}
+ 134:	08 95       	ret
+
+00000136 <motor_pin_config>:
+? * Logic: This function configures the pins on PORT-A for Motor driver
+? * Example Call: motor_pin_config()
+? */
+void motor_pin_config()
+{
+	DDRA = 0b00001111;
+ 136:	8f e0       	ldi	r24, 0x0F	; 15
+ 138:	81 b9       	out	0x01, r24	; 1
+	PORTA =0b00000000;
+ 13a:	12 b8       	out	0x02, r1	; 2
+}
+ 13c:	08 95       	ret
+
+0000013e <magnet_on>:
+? * Example Call: magnet_on()
+? */
+
+void magnet_on()
+{
+	PORTH = 0b00000001;
+ 13e:	81 e0       	ldi	r24, 0x01	; 1
+ 140:	80 93 02 01 	sts	0x0102, r24
+}
+ 144:	08 95       	ret
+
+00000146 <magnet_off>:
+? * Example Call: magnet_off()
+? */
+
+void magnet_off()
+{
+	PORTH = 0b00000000;
+ 146:	10 92 02 01 	sts	0x0102, r1
+}
+ 14a:	08 95       	ret
+
+0000014c <forward>:
+? * Logic: This function moves robot forward
+? * Example Call: forward()
+? */
+void forward()
+{
+	PORTA =0b00001010 ;
+ 14c:	8a e0       	ldi	r24, 0x0A	; 10
+ 14e:	82 b9       	out	0x02, r24	; 2
+}
+ 150:	08 95       	ret
+
+00000152 <backward>:
+? * Logic: This function moves robot backward
+? * Example Call: backward()
+? */
+void backward()
+{
+	PORTA =0b00000101 ;
+ 152:	85 e0       	ldi	r24, 0x05	; 5
+ 154:	82 b9       	out	0x02, r24	; 2
+}/*
+ 156:	08 95       	ret
+
+00000158 <left>:
+? * Logic: This function moves robot left
+? * Example Call: left()
+? */
+void left()
+{
+	PORTA =0b00000110 ;
+ 158:	86 e0       	ldi	r24, 0x06	; 6
+ 15a:	82 b9       	out	0x02, r24	; 2
+
+}
+ 15c:	08 95       	ret
+
+0000015e <right>:
+? * Logic: This function moves robot right
+? * Example Call: right()
+? */
+void right()
+{
+	PORTA =0b00001001 ;
+ 15e:	89 e0       	ldi	r24, 0x09	; 9
+ 160:	82 b9       	out	0x02, r24	; 2
+}
+ 162:	08 95       	ret
+
+00000164 <soft_left>:
+? * Logic: This function moves robot left slowly --( only right motor moves forward )
+? * Example Call: soft_left()
+? */
+void soft_left()
+{
+	PORTA =0b00000010 ;
+ 164:	82 e0       	ldi	r24, 0x02	; 2
+ 166:	82 b9       	out	0x02, r24	; 2
+}
+ 168:	08 95       	ret
+
+0000016a <soft_right>:
+? * Logic: This function moves robot right slowly--( only left motor moves forward )
+? * Example Call: soft_right()
+? */
+void soft_right()
+{
+	PORTA =0b00001000 ;
+ 16a:	88 e0       	ldi	r24, 0x08	; 8
+ 16c:	82 b9       	out	0x02, r24	; 2
+}
+ 16e:	08 95       	ret
+
+00000170 <stop>:
+? * Logic: This function stops both motors 
+? * Example Call: stop()
+? */
+void stop()
+{
+	PORTA = 0b00000000;
+ 170:	12 b8       	out	0x02, r1	; 2
+}
+ 172:	08 95       	ret
+
+00000174 <main>:
+{
+ 
+ 
+ 
+    /* Replace with your application code */
+	motor_pin_config();
+ 174:	0e 94 9b 00 	call	0x136	; 0x136 <motor_pin_config>
+	magnet_pin_config();
+ 178:	0e 94 95 00 	call	0x12a	; 0x12a <magnet_pin_config>
+    while (1) 
+    {
+		forward();
+ 17c:	0e 94 a6 00 	call	0x14c	; 0x14c <forward>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 180:	8f ef       	ldi	r24, 0xFF	; 255
+ 182:	9f ef       	ldi	r25, 0xFF	; 255
+ 184:	a6 e8       	ldi	r26, 0x86	; 134
+ 186:	81 50       	subi	r24, 0x01	; 1
+ 188:	90 40       	sbci	r25, 0x00	; 0
+ 18a:	a0 40       	sbci	r26, 0x00	; 0
+ 18c:	e1 f7       	brne	.-8      	; 0x186 <main+0x12>
+ 18e:	00 c0       	rjmp	.+0      	; 0x190 <main+0x1c>
+ 190:	00 00       	nop
+		_delay_ms(3000);
+		stop();
+ 192:	0e 94 b8 00 	call	0x170	; 0x170 <stop>
+ 196:	8f ef       	ldi	r24, 0xFF	; 255
+ 198:	9f ef       	ldi	r25, 0xFF	; 255
+ 19a:	a9 e5       	ldi	r26, 0x59	; 89
+ 19c:	81 50       	subi	r24, 0x01	; 1
+ 19e:	90 40       	sbci	r25, 0x00	; 0
+ 1a0:	a0 40       	sbci	r26, 0x00	; 0
+ 1a2:	e1 f7       	brne	.-8      	; 0x19c <main+0x28>
+ 1a4:	00 c0       	rjmp	.+0      	; 0x1a6 <main+0x32>
+ 1a6:	00 00       	nop
+		_delay_ms(2000);
+	    magnet_on();
+ 1a8:	0e 94 9f 00 	call	0x13e	; 0x13e <magnet_on>
+ 1ac:	8f ef       	ldi	r24, 0xFF	; 255
+ 1ae:	9f ef       	ldi	r25, 0xFF	; 255
+ 1b0:	a6 e8       	ldi	r26, 0x86	; 134
+ 1b2:	81 50       	subi	r24, 0x01	; 1
+ 1b4:	90 40       	sbci	r25, 0x00	; 0
+ 1b6:	a0 40       	sbci	r26, 0x00	; 0
+ 1b8:	e1 f7       	brne	.-8      	; 0x1b2 <main+0x3e>
+ 1ba:	00 c0       	rjmp	.+0      	; 0x1bc <main+0x48>
+ 1bc:	00 00       	nop
+		_delay_ms(3000);
+		backward();
+ 1be:	0e 94 a9 00 	call	0x152	; 0x152 <backward>
+ 1c2:	8f ef       	ldi	r24, 0xFF	; 255
+ 1c4:	9f ef       	ldi	r25, 0xFF	; 255
+ 1c6:	a6 e8       	ldi	r26, 0x86	; 134
+ 1c8:	81 50       	subi	r24, 0x01	; 1
+ 1ca:	90 40       	sbci	r25, 0x00	; 0
+ 1cc:	a0 40       	sbci	r26, 0x00	; 0
+ 1ce:	e1 f7       	brne	.-8      	; 0x1c8 <main+0x54>
+ 1d0:	00 c0       	rjmp	.+0      	; 0x1d2 <main+0x5e>
+ 1d2:	00 00       	nop
+		_delay_ms(3000);
+		magnet_off();
+ 1d4:	0e 94 a3 00 	call	0x146	; 0x146 <magnet_off>
+		stop();
+ 1d8:	0e 94 b8 00 	call	0x170	; 0x170 <stop>
+ 1dc:	8f ef       	ldi	r24, 0xFF	; 255
+ 1de:	9f ef       	ldi	r25, 0xFF	; 255
+ 1e0:	a6 e8       	ldi	r26, 0x86	; 134
+ 1e2:	81 50       	subi	r24, 0x01	; 1
+ 1e4:	90 40       	sbci	r25, 0x00	; 0
+ 1e6:	a0 40       	sbci	r26, 0x00	; 0
+ 1e8:	e1 f7       	brne	.-8      	; 0x1e2 <main+0x6e>
+ 1ea:	00 c0       	rjmp	.+0      	; 0x1ec <main+0x78>
+ 1ec:	00 00       	nop
+ 1ee:	c6 cf       	rjmp	.-116    	; 0x17c <main+0x8>
+
+000001f0 <_exit>:
+ 1f0:	f8 94       	cli
+
+000001f2 <__stop_program>:
+ 1f2:	ff cf       	rjmp	.-2      	; 0x1f2 <__stop_program>
